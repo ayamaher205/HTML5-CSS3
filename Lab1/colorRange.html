@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranges</title>
+    <link rel="stylesheet" href="colorRange.css">
+</head>
+<body>
+    <div class="red">
+    <label for="">Red</label>
+    <input type="range" name="color" min="0" max="255" value="0" id="red">
+    </div>
+    <div class="green">
+    <label for="">Green</label>
+    <input type="range"  name="color"  min="0" max="255" value="0" id="green">
+    </div>
+    <div class="blue">
+    <label for="">Blue</label>
+    <input type="range"  name="color"  min="0" max="255" value="0"  id="blue">
+    </div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem dolore dicta voluptates itaque commodi sequi tempore, aliquam possimus illum! Alias commodi, inventore minus vero reiciendis necessitatibus adipisci enim perferendis corporis?</p>
+    <script>
+        var e = document.getElementsByTagName("p")[0];
+/*         function myColour() { 
+var red = document.getElementById('red').value; 
+var green = document.getElementById('green').value; 
+var blue = document.getElementById('blue').value;  
+var colour = 'rgb(' + red + ',' + green + ',' + blue + ')'; 
+e.style.color = colour; 
+}  */
+document.getElementById('red') 
+.addEventListener('input', function(){
+var green = document.getElementById('green').value; 
+var red = document.getElementById('red').value;  
+var blue = document.getElementById('blue').value;  
+var colour = 'rgb(' + red + ',' + green + ',' + blue + ')'; 
+e.style.color = colour; 
+}); 
+document.getElementById('green') 
+.addEventListener('input',function(){
+var green = document.getElementById('green').value; 
+var red = document.getElementById('red').value;  
+var blue = document.getElementById('blue').value;  
+var colour = 'rgb(' + red + ',' + green + ',' + blue + ')';  
+e.style.color = colour; 
+}); 
+document.getElementById('blue') 
+.addEventListener('input', function(){
+var green = document.getElementById('green').value; 
+var red = document.getElementById('red').value;  
+var blue = document.getElementById('blue').value;  
+var colour = 'rgb(' + red + ',' + green + ',' + blue + ')'; 
+e.style.color = colour; 
+}); 
+    </script>
+</body>
+</html>

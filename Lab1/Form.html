@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+    <form action="">
+        <label for="">Full Name</label>
+        <input type="text" value="" placeholder="Enter Name" pattern="[a-zA-Z]{1,15} [a-zA-Z]{1,15}" oninvalid="this.setCustomValidity('please enter first and last name seperated by space'),this.value=' '" required>
+        <label for="">Email</label>
+        <input type="email" name="usrEmail" id="" placeholder="Enter Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" autocomplete="off"  oninvalid="this.setCustomValidity('please enter valid eamil')" required>
+        <button type="submit"> submit </button>
+    </form>
+</body>
+</html>

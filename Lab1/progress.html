@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Change Color</title>
+        <link rel="stylesheet" href="progress.css">
+    </head>
+    <body>
+    
+        <label for="progress">progress </label>
+        <progress min="0" max="100" value="0" id="progress">0%</progress>
+        <p id="percentage"></p>
+
+        <form oninput="res.value=parseInt(num1.value)+parseInt(num2.value)">
+            <input type="text" id="num1" value="0"/>
+            <input type="range" min="0" max="10" value="0" step="1" id="num2"/> 
+            <output name="res"></output>
+        </form>
+
+        <script src="progress.js"></script>
+    </body>
+</html>

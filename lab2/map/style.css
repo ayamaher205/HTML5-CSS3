@@ -1,0 +1,61 @@
+div{
+    display: flex;
+    justify-content: space-around;
+}
+span , button{
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: rgb(3, 164, 3);
+    color: white;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    margin: 10px;
+}
+/* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+ #map {
+    height: 70%;
+    margin: 10px;
+    box-sizing: content-box;
+    border-radius: 15px;
+  }
+  
+  /* 
+   * Optional: Makes the sample page fill the window. 
+   */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  p{
+    font-size: 20px;
+    color: red;
+  }
+  table{
+    width: 100%;
+    display: none;
+  }
+  th, td{
+    border: 1px solid; 
+    padding: 10px;
+    text-align: center;
+  }
+  th {
+    background-color: rgb(3, 164, 3);
+    color: white;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+  }
+  *{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+  }
