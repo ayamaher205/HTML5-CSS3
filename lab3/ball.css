@@ -1,0 +1,34 @@
+img{
+    display: inline-block;
+}
+.ball{
+    width:100px;
+    height:100px;
+    position: relative;
+    margin-top: 200px;
+    animation-name: hamada;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+body{
+    width: 100%;
+    background-image: url("images/grass.png");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size:contain;
+}
+@keyframes hamada {
+    0%{
+       left:0%;
+       top:0;
+    }50%{
+        top:-200px;
+    }
+    100%{
+       left:50%;
+       top:0;
+    }
+    
+}

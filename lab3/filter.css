@@ -1,0 +1,19 @@
+.defualt{
+    filter: none;
+    background-blend-mode:normal;
+}
+.saturate {
+    background-blend-mode:saturation;
+}
+.sepia{
+    filter: sepia(.65);
+}
+.GrayScale{
+    filter: grayscale(150%);
+}
+.invert{
+    filter: invert(0.40);
+}
+.opacity {
+    filter: opacity(.3);
+}
