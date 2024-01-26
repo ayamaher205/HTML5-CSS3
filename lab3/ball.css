@@ -1,3 +1,4 @@
+
 img{
     display: inline-block;
 }
@@ -7,27 +8,40 @@ img{
     position: relative;
     margin-top: 200px;
     animation-name: hamada;
-    animation-duration: 2s;
-    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-timing-function:cubic-bezier(0.38, 0.52, 0, 0.99);
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation-direction:alternate;
 }
-body{
-    width: 100%;
+div{
+    top:200px;
     background-image: url("images/grass.png");
+    background-size: 1200px;
     background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-size:contain;
+    background-position: 80px 200px ;
+    position: relative;
+    
+}
+img:first-of-type{
+    position: absolute;
+    left: -10%;
+    top:-150px;
+}
+img:last-of-type{
+    right:-10%;
+    top:-200px;
+    position: absolute;
 }
 @keyframes hamada {
     0%{
-       left:0%;
-       top:0;
+       left:15%;
+       top:3%;
     }50%{
-        top:-200px;
+        top:10px;
+        transform:rotate(360deg);
     }
     100%{
-       left:50%;
+       left:85%;
        top:0;
     }
     

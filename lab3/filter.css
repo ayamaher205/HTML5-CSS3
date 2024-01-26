@@ -3,10 +3,10 @@
     background-blend-mode:normal;
 }
 .saturate {
-    background-blend-mode:saturation;
+    filter:saturate(3.5);
 }
 .sepia{
-    filter: sepia(.65);
+    filter: sepia(8);
 }
 .GrayScale{
     filter: grayscale(150%);
